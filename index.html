@@ -380,7 +380,7 @@
     // --- Toast helper ---
     const toast = document.getElementById("toast");
     let toastTimer = null;
-    function showToast(text, duration = 3000){
+    function showToast(text, duration = 2200){
       toast.textContent = text;
       toast.classList.add("show");
       clearTimeout(toastTimer);
@@ -410,7 +410,7 @@
       } while (index === lastJokeIndex);
 
       lastJokeIndex = index;
-      showToast(surprises[index], 15000);
+      showToast(surprises[index], 9000);
       // Tiny little title glow bump
       const title = document.getElementById("title");
       title.animate(
@@ -510,3 +510,4 @@
   </script>
 </body>
 </html>
+
